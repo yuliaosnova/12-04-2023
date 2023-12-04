@@ -60,6 +60,10 @@
   }
 }
 
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+
 .description {
   text-align: justify;
   font-size: 14px;
