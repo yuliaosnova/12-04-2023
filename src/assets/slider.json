@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"image": "../../assets/bg-images/slider_images/slider_img_1.jpg",
+		"city": "Lviv Region",
+		"title": "Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
+		"description": "Wind Power for auto field irrigation",
+		"date": "July 2023"
+	},
+	{
+		"id": 2,
+		"image": "slider_img_2",
+		"city": "Zhytomyr city",
+		"title": "Private Enterprise “Bosch”",
+		"description": "Solar Panels for industrial use",
+		"date": "November 2023"
+	},
+	{
+		"id": 3,
+		"image": "slider_img_3",
+		"city": "Rivne city",
+		"title": "Private Enterprise “Biotech”",
+		"description": "Thermal modules",
+		"date": "October 2023"
+	},
+	{
+		"id": 4,
+		"image": "slider_img_4",
+		"city": "Kherson city",
+		"title": "Private Enterprise “HealthyFarm”",
+		"description": "Wind power",
+		"date": "September 2021"
+	},
+	{
+		"id": 5,
+		"image": "slider_img_5",
+		"city": "Zaporizhia city",
+		"title": "Private Enterprise “Biotech”",
+		"description": "Mini nuclear stations",
+		"date": "May 2021"
+	}
+]

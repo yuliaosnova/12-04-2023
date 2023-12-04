@@ -1,0 +1,47 @@
+.contsctUsBtn {
+	width: 130px;
+	height: 39px;
+	border-radius: 500px;
+	background-color: var(--accent-cl);
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin: 0 auto;
+ 
+	&:hover {
+	  background-color: #173d33;
+	  transition: var(--animation);
+ 
+	  .btnText {
+		 color: var(--accent-cl);
+		 transition: var(--animation);
+	  }
+ 
+	  .icon {
+		 fill: var(--accent-cl);
+		 transition: var(--animation);
+		 background-image: url("../../../assets/small_icon.svg");
+		 background-size: 14px 14px;
+		 fill: none;
+		 stroke: none;
+	  }
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 140px;
+	 }
+ }
+
+ .btnText {
+	font-size: 16px;
+	letter-spacing: -0.64px;
+ }
+
+ .icon {
+	width: 14px;
+	height: 14px;
+	fill: var(--main-txt-cl);
+ }

@@ -1,0 +1,99 @@
+.contactsContainer {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+	 }
+
+	 @media screen and (min-width: 1280px) {
+		margin-top: 120px;
+	 }
+}
+
+.container {
+	width: 244px;
+	margin-bottom: 24px;
+
+	@media screen and (min-width: 1280px) {
+		width: 466px;
+	 }
+}
+
+.group {
+	margin-top: 24px;
+}
+
+.label {
+text-align: justify;
+font-size: 16px;
+letter-spacing: -0.64px;
+
+@media screen and (min-width: 1280px) {
+	margin-bottom: 16px;
+ }
+}
+
+.adressContainer {
+	@media screen and (min-width: 1280px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	 }
+}
+
+.adress {
+	margin-top: 8px;
+text-align: justify;
+font-size: 20px;
+letter-spacing: -0.8px;
+
+@media screen and (min-width: 1280px) {
+	font-size: 24px;
+	letter-spacing: -0.96px;
+ }
+}
+
+/* .street {
+text-align: justify;
+font-size: 20px;
+letter-spacing: -0.8px;
+} */
+
+.block {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	/* justify-content: center; */
+}
+
+.contactIcon {
+	width: 24px;
+	height: 24px;
+	/* padding: 12px; */
+	stroke: currentColor;
+	fill: none;
+	margin-bottom: -5px;
+
+	&:hover {
+		stroke: var(--accent-cl);
+		transition: var(--animation);
+	}
+}
+
+.sosials {
+	width: 24px;
+	height: 24px;
+	stroke: currentColor;
+	fill: none;
+	padding: 12px;
+
+	&:hover {
+		stroke: var(--accent-cl);
+		transition: var(--animation);
+	}
+
+	@media screen and (min-width: 1280px) {
+		padding: 2px;
+	 }
+}

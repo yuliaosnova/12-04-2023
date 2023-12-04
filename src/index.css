@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Oswald:wght@400;700&display=swap');
+@font-face {
+  font-family: "Saygon";
+  src: local("Saygon"), url(./fonts/casaygontext-light-2.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: local("Gothic"), url(./fonts/Fontspring-DEMO-allroundgothic-thick.otf) format("opentype");
+}
+
+:root {
+  /* fonts */
+  --main-font: "Fira Sans", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
+  --logo-font: "Gothic", sans-serif;
+  --moto-font: "Saygon", sans-serif;
+
+  /* text colours */
+  --main-txt-cl: #173d33;
+  --accent-cl: #97d28b;
+  --red-cl: #d28b8b;
+
+  /* background colors */
+  --main-bg: #F3F5FA;
+  --secondary-bg: #eaedf1;
+  --modal-bg: #173d33bf;
+  --btn-hover: #173d33;
+
+  /* animation */
+  --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+

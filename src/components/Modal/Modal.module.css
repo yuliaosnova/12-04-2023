@@ -1,0 +1,147 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(23, 61, 51, 0.25);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+	padding-top: 42px;
+  }
+
+  @media screen and (min-width: 768px) {
+	padding-top: 30px;
+  }
+}
+
+.modal {
+  width: 272px;
+  height: 653px;
+  border-radius: 25px;
+  background: rgba(23, 61, 51, 0.75);
+  backdrop-filter: blur(12.5px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+	/* display: block; */
+	margin-left: 400px;
+	justify-content: flex-start;
+ }
+
+ @media screen and (min-width: 1280px) {
+	width: 317px;
+	/* display: block; */
+	margin-left: 960px;
+
+ }
+}
+
+.modalClose {
+  width: 90px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  margin-bottom: 8px;
+
+  &:hover {
+	.closeIcon{
+		stroke: var(--accent-cl);
+		transition: var(--animation);
+	}
+
+	.btnText {
+		color: var(--accent-cl);
+		transition: var(--animation);
+	}
+ }
+}
+
+.navigation {
+  flex: 1;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
+  fill: none;
+}
+
+.btnText {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+}
+
+.line {
+  height: 1px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.item {
+  &:hover {
+    .link {
+      color: var(--accent-cl);
+      transition: var(--animation);
+    }
+
+    .iconRight {
+      stroke: var(--accent-cl);
+      transition: var(--animation);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.link {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: -0.96px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconRight {
+  width: 17px;
+  height: 17px;
+  stroke: #ffffff;
+  fill: none;
+  transform: rotate(145deg);
+}
+
+.sosialsGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.sosials {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  fill: none;
+
+  &:hover {
+    stroke: var(--accent-cl);
+    transition: var(--animation);
+  }
+}

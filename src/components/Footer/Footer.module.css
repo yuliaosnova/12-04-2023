@@ -1,0 +1,141 @@
+.line {
+  height: 1px;
+  background-color: var(--accent-cl);
+  margin-bottom: 24px;
+  border: none;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+	justify-content:flex-start;
+ }
+
+ @media screen and (min-width: 1280px) {
+	justify-content: space-between;
+ }
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  @media screen and (min-width: 768px) {
+	margin-right: 65px;
+ }
+}
+
+.logoIcon {
+  width: 31px;
+  height: 18px;
+}
+
+.companyMoto {
+  font-family: var(--moto-font);
+  font-size: 10px;
+  line-height: .9;
+  letter-spacing: -0.4px;
+  margin-right: 19px;
+}
+
+.companyName {
+  color: #173d33;
+  font-family: var(--logo-font);
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: -1.32px;
+  margin-right: 4px;
+
+  &:hover {
+    color: var(--accent-cl);
+    transition: var(--animation);
+  }
+}
+
+.textGreen {
+  color: var(--accent-cl);
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-cl);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    background-color: #173d33;
+    transition: var(--animation);
+
+    .icon {
+      stroke: var(--accent-cl);
+    }
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  stroke: #292d32;
+  fill: none;
+}
+
+.sosialsGroup {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+	display: none;
+ }
+}
+
+.sosialsForLargeScreen {
+	display: none;
+	@media screen and (min-width: 768px) {
+		display: block;	
+		margin-right: 254px;	
+		/* display: flex;
+		justify-content: center;
+		gap: 8px; */
+	 }
+}
+
+.label {
+  text-align: justify;
+  font-size: 16px;
+  letter-spacing: -0.64px;
+}
+
+.adressContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sosials {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  padding: 4px;
+  &:hover {
+    stroke: var(--accent-cl);
+    transition: var(--animation);
+  }
+}
+
+.adress {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+}
