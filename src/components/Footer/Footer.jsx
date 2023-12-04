@@ -1,8 +1,7 @@
-import css from "./Footer.module.css";
-// import companyName from "../../assets/ecosolution.png";
 import sprite from "../../assets/sprite.svg";
+import css from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = ({ onClick }) => {
   return (
     <section>
       <hr className={css.line} />
@@ -44,7 +43,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <button className={css.buttonContainer}>
+        <button className={css.buttonContainer} onClick={() => onClick("main")}>
           <svg className={css.icon}>
             <use href={`${sprite}#icon-arrow-up`}></use>
           </svg>

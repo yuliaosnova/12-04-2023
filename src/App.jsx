@@ -20,27 +20,23 @@ function App() {
   const refContactUs = useRef(null);
 
   const handleClick = (section) => {
-    if (section === "main") {
-      refMain.current?.scrollIntoView({ behavior: "smooth" });
+    switch (section) {
+      case "main":
+        refMain.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "about":
+        refAbout.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "cases":
+        refCases.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "faq":
+        refFaq.current?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "contactUs":
+        refContactUs.current?.scrollIntoView({ behavior: "smooth" });
+        break;
     }
-
-    if (section === "about") {
-      refAbout.current?.scrollIntoView({ behavior: "smooth" });
-    }
-
-    if (section === "cases") {
-      refCases.current?.scrollIntoView({ behavior: "smooth" });
-    }
-
-    if (section === "faq") {
-      refFaq.current?.scrollIntoView({ behavior: "smooth" });
-    }
-
-    if (section === "contactUs") {
-      refContactUs.current?.scrollIntoView({ behavior: "smooth" });
-    }
-
-    setIsModal();
   };
 
   const setIsModal = () => {
@@ -50,14 +46,14 @@ function App() {
   return (
     <div className={css.container}>
       {isModalOpen && <Modal setIsModal={setIsModal} onClick={handleClick} />}
-      <Header setIsModal={setIsModal} />
-      <MainSection ref={refMain} />
+      <Header setIsModal={setIsModal} onClick={handleClick} />
+      <MainSection ref={refMain} onClick={handleClick} />
       <ValuesSection ref={refAbout} />
       <Electricity />
       <CasesSection ref={refCases} />
-      <FaqSection ref={refFaq} />
+      <FaqSection ref={refFaq} onClick={handleClick} />
       <ContactSection ref={refContactUs} />
-      <Footer />
+      <Footer onClick={handleClick} />
     </div>
   );
 }

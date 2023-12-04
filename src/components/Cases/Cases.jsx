@@ -1,10 +1,10 @@
-import css from "./Cases.module.css";
+import { forwardRef, useState } from "react";
 import sprite from "../../assets/sprite.svg";
 import { images } from "../../assets/bg-images/slider_images";
-import { forwardRef, useState } from "react";
 import Title from "../reusable/Title/Title";
 import data from "../../assets/slider.json";
 import ItemCase from "./ItemCase/ItemCase";
+import css from "./Cases.module.css";
 
 const Cases = ({}, ref) => {
   const [index, setIndex] = useState(0);

@@ -1,6 +1,6 @@
-import css from "./ItemCase.module.css";
 import data from "../../../assets/slider.json";
 import sprite from "../../../assets/sprite.svg";
+import css from "./ItemCase.module.css";
 
 const ItemCase = ({ onTouchStart, onTouchMove, onTouchEnd, images, index }) => {
   const totalArticles = data.length;
@@ -25,8 +25,7 @@ const ItemCase = ({ onTouchStart, onTouchMove, onTouchEnd, images, index }) => {
       <div className={css.description}>
         <div className={css.block}>
           <p className={css.articleTitle}>
-            {data[index].city},
-            <span> {data[index].title}</span>
+            {data[index].city},<span> {data[index].title}</span>
           </p>
           <button className={css.articleBtn}>
             <svg className={css.articleIcon}>

@@ -1,10 +1,8 @@
-// import Title from "../reusable/Title/Title/Title";
-import css from "./ContactUs.module.css";
+import { forwardRef } from "react";
 import sprite from "../../assets/sprite.svg";
 import Form from "../Form/Form";
-import { forwardRef } from "react";
 import Title from "../reusable/Title/Title";
-// import Title from "../reusable/Title/Title/Title";
+import css from "./ContactUs.module.css";
 
 const ContactUs = ({}, ref) => {
   return (
@@ -86,5 +84,4 @@ const ContactUs = ({}, ref) => {
   );
 };
 
-// export default ContactUs;
 export const ContactSection = forwardRef(ContactUs);

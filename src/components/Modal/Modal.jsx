@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import css from "./Modal.module.css";
 import { createPortal } from "react-dom";
 import sprite from "../../assets/sprite.svg";
+import css from "./Modal.module.css";
 
 const modalRoot = document.querySelector("#modal-root");
 
@@ -26,6 +26,11 @@ const Modal = ({ setIsModal, onClick }) => {
     }
   };
 
+  const handleLinkClick = (section) => {
+    onClick(section);
+    setIsModal();
+  };
+
   return createPortal(
     <div className={css.overlay} onClick={handleBackdropClick}>
       <div className={css.modal}>
@@ -41,7 +46,11 @@ const Modal = ({ setIsModal, onClick }) => {
         <nav className={css.navigation}>
           <ul className={css.list}>
             <li className={css.item}>
-              <a className={css.link} href="#main" onClick={() =>onClick('main')}>
+              <a
+                className={css.link}
+                href="#main"
+                onClick={() => handleLinkClick("main")}
+              >
                 <p>Main</p>
                 <svg className={[`${css.iconRight} ${css.icon}`]}>
                   <use href={`${sprite}#icon-arrow-right`}></use>
@@ -49,7 +58,11 @@ const Modal = ({ setIsModal, onClick }) => {
               </a>
             </li>
             <li className={css.item}>
-              <a className={css.link} href="#about" onClick={() =>onClick('about')}>
+              <a
+                className={css.link}
+                href="#about"
+                onClick={() => handleLinkClick("about")}
+              >
                 <p>About</p>
                 <svg className={[`${css.iconRight} ${css.icon}`]}>
                   <use href={`${sprite}#icon-arrow-right`}></use>
@@ -57,7 +70,11 @@ const Modal = ({ setIsModal, onClick }) => {
               </a>
             </li>
             <li className={css.item}>
-              <a className={css.link} href="#cases" onClick={() =>onClick('cases')}>
+              <a
+                className={css.link}
+                href="#cases"
+                onClick={() => handleLinkClick("cases")}
+              >
                 <p>Cases</p>
                 <svg className={[`${css.iconRight} ${css.icon}`]}>
                   <use href={`${sprite}#icon-arrow-right`}></use>
@@ -65,7 +82,11 @@ const Modal = ({ setIsModal, onClick }) => {
               </a>
             </li>
             <li className={css.item}>
-              <a className={css.link} href="#faq" onClick={() =>onClick('faq')}>
+              <a
+                className={css.link}
+                href="#faq"
+                onClick={() => handleLinkClick("faq")}
+              >
                 <p>FAQ</p>
                 <svg className={[`${css.iconRight} ${css.icon}`]}>
                   <use href={`${sprite}#icon-arrow-right`}></use>
@@ -73,7 +94,11 @@ const Modal = ({ setIsModal, onClick }) => {
               </a>
             </li>
             <li className={css.item}>
-              <a className={css.link} href="#contactUs" onClick={() =>onClick('contactUs')}>
+              <a
+                className={css.link}
+                href="#contactUs"
+                onClick={() => handleLinkClick("contactUs")}
+              >
                 <p>Contact Us</p>
                 <svg className={[`${css.iconRight} ${css.icon}`]}>
                   <use href={`${sprite}#icon-arrow-right`}></use>

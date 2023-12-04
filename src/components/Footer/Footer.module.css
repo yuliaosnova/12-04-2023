@@ -12,12 +12,12 @@
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-	justify-content:flex-start;
- }
+    justify-content: flex-start;
+  }
 
- @media screen and (min-width: 1280px) {
-	justify-content: space-between;
- }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+  }
 }
 
 .infoContainer {
@@ -26,8 +26,8 @@
   gap: 4px;
 
   @media screen and (min-width: 768px) {
-	margin-right: 65px;
- }
+    margin-right: 65px;
+  }
 }
 
 .logoIcon {
@@ -38,7 +38,7 @@
 .companyMoto {
   font-family: var(--moto-font);
   font-size: 10px;
-  line-height: .9;
+  line-height: 0.9;
   letter-spacing: -0.4px;
   margin-right: 19px;
 }
@@ -95,19 +95,16 @@
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-	display: none;
- }
+    display: none;
+  }
 }
 
 .sosialsForLargeScreen {
-	display: none;
-	@media screen and (min-width: 768px) {
-		display: block;	
-		margin-right: 254px;	
-		/* display: flex;
-		justify-content: center;
-		gap: 8px; */
-	 }
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 254px;
+  }
 }
 
 .label {
@@ -117,8 +114,13 @@
 }
 
 .adressContainer {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .sosials {
@@ -137,5 +139,8 @@
   font-size: 16px;
   text-align: center;
   letter-spacing: -0.64px;
-  margin-bottom: 16px;
+
+  &:not(:last-child) {
+	margin-bottom: 16px;
+  }
 }

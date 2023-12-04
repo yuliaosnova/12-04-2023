@@ -1,32 +1,24 @@
-import css from "./Form.module.css";
-import sprite from "../../assets/sprite.svg";
 import { useFormik } from "formik";
+import sprite from "../../assets/sprite.svg";
 import { formValidationSchema } from "../../helpers/formValidationShema";
+import css from "./Form.module.css";
 
 const Form = () => {
-  const {
-    values,
-    errors,
-    touched,
-    handleSubmit,
-    handleChange,
-    isSubmitting,
-    resetForm,
-    isValid,
-  } = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
+  const { values, errors, touched, handleSubmit, handleChange, resetForm } =
+    useFormik({
+      initialValues: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
 
-    validationSchema: formValidationSchema,
+      validationSchema: formValidationSchema,
 
-    onSubmit: () => {
-      resetForm();
-    },
-  });
+      onSubmit: () => {
+        resetForm();
+      },
+    });
   return (
     <form onSubmit={handleSubmit} className={css.form}>
       <label htmlFor="name" className={css.label}>
@@ -88,7 +80,7 @@ const Form = () => {
       <textarea
         name="message"
         id="message"
-		  onChange={handleChange}
+        onChange={handleChange}
         value={values.message}
         placeholder="Your message..."
         className={css.textarea}

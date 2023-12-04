@@ -1,7 +1,5 @@
-// import Title from "../reusable/Title/Title/Title";
-import css from "./Values.module.css";
-import sprite from "../../assets/sprite.svg";
 import { forwardRef } from "react";
+import sprite from "../../assets/sprite.svg";
 import Title from "../reusable/Title/Title";
 import {
   value_img_1_md,
@@ -9,6 +7,7 @@ import {
   value_img_1_lg,
   value_img_2_lg,
 } from "../../assets/bg-images";
+import css from "./Values.module.css";
 
 const Values = ({}, ref) => {
   return (
@@ -17,8 +16,6 @@ const Values = ({}, ref) => {
         <div className={css.titleContainer}>
           <Title title={"Main values of our company"}></Title>
         </div>
-
-        {/* <hr className={[`${css.line} ${css.verticalLine}`]}></hr> */}
         <p className={css.text}>
           EcoSolution envisions a world where sustainable energy solutions power
           a brighter and cleaner future for all. We aspire to be at the
@@ -27,7 +24,6 @@ const Values = ({}, ref) => {
           meet the world&lsquo;s energy needs.
         </p>
       </div>
-
       <div className={css.parent}>
         <div className={css.sell_1}>
           <div className={css.valueBlock}>
@@ -54,25 +50,24 @@ const Values = ({}, ref) => {
             lives and the lives of future generations
           </p>
         </div>
-
         <div className={css.sell_3}>
           <img
             srcSet={`${value_img_1_md} 345w, ${value_img_1_lg} 600w`}
             sizes="(min-width: 1280px) 600px, (min-width: 768px) 347px, 345vw"
             src={value_img_1_md}
             alt="Two men on the wind farms field"
-				className={css.image}
+            className={css.image}
           />
         </div>
         <div className={css.sell_4}>
-		  <img
+          <img
             srcSet={`${value_img_2_md} 345w, ${value_img_2_lg} 600w`}
             sizes="(min-width: 1280px) 600px, (min-width: 768px) 347px, 345vw"
             src={value_img_2_md}
             alt="Two men on the wind farms field"
-				className={css.image}
+            className={css.image}
           />
-		  </div>
+        </div>
 
         <div className={css.sell_5}>
           <div className={css.valueBlock}>
@@ -105,5 +100,4 @@ const Values = ({}, ref) => {
   );
 };
 
-// export default Values;
 export const ValuesSection = forwardRef(Values);

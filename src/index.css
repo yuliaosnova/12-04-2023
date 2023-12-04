@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Oswald:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Oswald:wght@400;700&display=swap");
 @font-face {
   font-family: "Saygon";
   src: local("Saygon"), url(./fonts/casaygontext-light-2.otf) format("opentype");
@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "Gothic";
-  src: local("Gothic"), url(./fonts/Fontspring-DEMO-allroundgothic-thick.otf) format("opentype");
+  src: local("Gothic"),
+    url(./fonts/Fontspring-DEMO-allroundgothic-thick.otf) format("opentype");
 }
 
 :root {
@@ -22,7 +23,7 @@
   --red-cl: #d28b8b;
 
   /* background colors */
-  --main-bg: #F3F5FA;
+  --main-bg: #f3f5fa;
   --secondary-bg: #eaedf1;
   --modal-bg: #173d33bf;
   --btn-hover: #173d33;
@@ -76,18 +77,5 @@ img {
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-

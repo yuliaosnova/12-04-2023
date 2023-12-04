@@ -7,25 +7,25 @@
   }
 
   @media screen and (min-width: 1280px) {
-	gap: 185px;
- }
+    gap: 185px;
+  }
 }
 
 .titleContainer {
-	@media screen and (min-width: 768px) {
-	  max-width: 320px;
-	  position: absolute;
-	  top: 10px;
-	  right: 0;
-	}
- 
-	@media screen and (min-width: 1280px) {
-	 max-width: 398px;
-	 position: absolute;
-	 top: 10px;
-	 right: 80px;
+  @media screen and (min-width: 768px) {
+    max-width: 320px;
+    position: absolute;
+    top: 10px;
+    right: 0;
   }
- }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 398px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+}
 
 .list {
   margin-top: 24px;
@@ -38,8 +38,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-	width: 596px;
- }
+    width: 596px;
+  }
 }
 
 .icon {
@@ -55,9 +55,9 @@
   letter-spacing: -0.72px;
 
   @media screen and (min-width: 1280px) {
-	font-size: 24px;
-	letter-spacing: -0.96px;
- }
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
 }
 
 .description {
@@ -67,9 +67,9 @@
   margin-left: 27px;
 
   @media screen and (min-width: 1280px) {
-	font-size: 16px;
-	letter-spacing: -0.64px;
- }
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 }
 
 .summary {
@@ -80,8 +80,8 @@
   margin-bottom: 16px;
 
   @media screen and (min-width: 1280px) {
-	margin-bottom: 24px;
- }
+    margin-bottom: 24px;
+  }
 }
 
 .summary:before {
@@ -116,9 +116,9 @@ details[open] > .summary:before {
   margin-bottom: 12px;
 
   @media screen and (min-width: 1280px) {
-	font-size: 24px;
-	letter-spacing: -0.96px;
- }
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
 }
 
 .contsctUsBtn {
@@ -178,21 +178,21 @@ details[open] summary ~ * {
 }
 
 .block {
-	@media screen and (min-width: 768px) {
-	  display: flex;
-	  flex-direction: column;
-	}
- }
- .line {
-	height: 1px;
-	background-color: var(--accent-cl);
-	margin-bottom: 16px;
-	margin-top: 16px;
-	border: none;
- 
-	@media screen and (min-width: 1280px) {
-	 margin-top: 24px;
-	 margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
-	
- }
+}
+
+.line {
+  height: 1px;
+  background-color: var(--accent-cl);
+  margin-bottom: 16px;
+  margin-top: 16px;
+  border: none;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,21 +1,20 @@
 .valuesTitleBlock {
-	@media screen and (min-width: 768px) {
-		display: flex;
-	 }
-	 @media screen and (min-width: 1280px) {
-		margin-bottom: 124px;
-	 }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 124px;
+  }
 }
 
 .titleContainer {
-	@media screen and (min-width: 768px) {
-		width: 270px;
-	 }
+  @media screen and (min-width: 768px) {
+    width: 270px;
+  }
 
-	 @media screen and (min-width: 1280px) {
-		width: 365px;
-		/* margin-right: 416px; */
-	 }
+  @media screen and (min-width: 1280px) {
+    width: 365px;
+  }
 }
 
 .text {
@@ -30,50 +29,32 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-	width: 340px;
-	margin-top: 0;
+    width: 340px;
+    margin-top: 0;
 
-	&::before{
-		content: '';
-	display: block;
-	height: 110px;
-	width: 1px;
-	background: var(--accent-cl);
-	position: absolute;
-	left: -11px;
+    &::before {
+      content: "";
+      display: block;
+      height: 110px;
+      width: 1px;
+      background: var(--accent-cl);
+      position: absolute;
+      left: -11px;
+    }
 
-	
-	}
+    @media screen and (min-width: 1280px) {
+      &::before {
+        height: 87px;
+        left: -160px;
+      }
+    }
+  }
 
-	@media screen and (min-width: 1280px) {
-		&::before{
-			/* content: '';
-		display: block;
-		height: 110px;
-		width: 1px;
-		background: var(--accent-cl);
-		position: absolute; */
-		height: 87px;
-		left: -220px;
-	 }
- }}
-
- @media screen and (min-width: 1280px) {
-	width: 459px;
-	margin-left: auto;
- }
+  @media screen and (min-width: 1280px) {
+    width: 459px;
+    margin-left: auto;
+  }
 }
-
-/* .verticalLine {
-	display: none;
-
-	@media screen and (min-width: 768px) {
-		display: block;
-		transform: rotate(90deg);
-		margin-left: 82px;
-		margin-right: 11px;
-	 }
-} */
 
 .parent {
   display: grid;
@@ -82,143 +63,80 @@
   gap: 24px;
   width: 100%;
 
-
   @media screen and (min-width: 768px) {
-	grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
- }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
- @media screen and (min-width: 1280px) {
- }
+  @media screen and (min-width: 1280px) {
+  }
 }
 
-.sell_1, .sell_2, .sell_5, .sell_6 {
+.sell_1,
+.sell_2,
+.sell_5,
+.sell_6 {
   width: 136px;
   height: 175px;
   padding: 12px;
   background-color: var(--secondary-bg);
 
   @media screen and (min-width: 1280px) {
-	padding-top: 48px;
-	padding-left: 24px;
-	width: 262px;
-	height: 300px;
+    padding-top: 48px;
+    padding-left: 24px;
+    width: 262px;
+    height: 300px;
   }
 }
 
-.sell_3, .sell_4 {
-	display: none;
+.sell_3,
+.sell_4 {
+  display: none;
 
-	@media screen and (min-width: 768px) {
-		display: block;
-	}
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
-/* .sell_1 {
-	@media screen and (min-width: 768px) {
-		background-color: red;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
-/* .sell_2 {
-	@media screen and (min-width: 768px) {
-		background-color: orange;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
 .sell_3 {
-	@media screen and (min-width: 768px) {
-		/* background-color: green; */
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: 3;
-		grid-column-end: 5;
-	}
+  @media screen and (min-width: 768px) {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
 }
 
 .sell_4 {
-	@media screen and (min-width: 768px) {
-		/* background-color: rgb(138, 138, 226); */
-		grid-row-start: 2;
-		grid-row-end: 2;
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
+  @media screen and (min-width: 768px) {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
-/* .sell_5 {
-	@media screen and (min-width: 768px) {
-		background-color: blue;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
-/* .sell_6 {
-	@media screen and (min-width: 768px) {
-		background-color: blueviolet;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
-/* .sell_7 {
-	
-
-	@media screen and (min-width: 768px) {
-		background-color: aqua;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
-/* .sell_8 {
-	
-
-	@media screen and (min-width: 768px) {
-		background-color: bisque;
-		grid-row-start: auto;
-		grid-row-end: auto;
-		grid-column-start: auto;
-		grid-column-end: auto;
-	}
-} */
-
 .image {
-	@media screen and (min-width: 768px) {
-		width: 344px;
-		height: 200px;
-	}
+  @media screen and (min-width: 768px) {
+    width: 344px;
+    height: 200px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		width: 620px;
-		height: 360px;
-	  }
+  @media screen and (min-width: 1280px) {
+    width: 620px;
+    height: 360px;
+  }
 }
 .valueBlock {
   margin-bottom: 33px;
 
   @media screen and (min-width: 768px) {
-margin-bottom: 40px;
-}
+    margin-bottom: 40px;
+  }
 
-@media screen and (min-width: 1280px) {
-	margin-bottom: 94px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 94px;
+  }
 }
 
 .icon {
@@ -230,19 +148,13 @@ margin-bottom: 40px;
   margin-right: 8px;
 
   @media screen and (min-width: 1280px) {
-	width: 24px;
-  height: 24px;
-	}
+    width: 24px;
+    height: 24px;
+  }
 }
 
-/* .value {
-  display: inline;
-
- 
-} */
-
 .value {
-	display: inline;
+  display: inline;
   font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
@@ -251,7 +163,7 @@ margin-bottom: 40px;
   text-transform: uppercase;
 
   @media screen and (min-width: 1280px) {
-	font-size: 32px;
+    font-size: 32px;
   }
 }
 
@@ -261,8 +173,8 @@ margin-bottom: 40px;
   border: none;
 
   @media screen and (min-width: 1280px) {
-	margin-bottom: 24px;
-	}
+    margin-bottom: 24px;
+  }
 }
 
 .definition {
@@ -271,6 +183,6 @@ margin-bottom: 40px;
   text-transform: lowercase;
 
   @media screen and (min-width: 1280px) {
-	font-size: 16px;
-	}
+    font-size: 16px;
+  }
 }
