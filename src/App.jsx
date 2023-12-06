@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import css from "./App.module.css";
 import { CasesSection } from "./components/Cases/Cases";
 import { ContactSection } from "./components/ContactUs/ContactUs";
@@ -54,6 +56,7 @@ function App() {
       <FaqSection ref={refFaq} onClick={handleClick} />
       <ContactSection ref={refContactUs} />
       <Footer onClick={handleClick} />
+      <ToastContainer />
     </div>
   );
 }

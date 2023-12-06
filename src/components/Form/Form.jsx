@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { toast } from "react-toastify";
 import sprite from "../../assets/sprite.svg";
 import { formValidationSchema } from "../../helpers/formValidationShema";
 import css from "./Form.module.css";
@@ -17,6 +18,9 @@ const Form = () => {
 
       onSubmit: () => {
         resetForm();
+        toast.success(
+          "We have received your message and will contact you soon!"
+        );
       },
     });
   return (
