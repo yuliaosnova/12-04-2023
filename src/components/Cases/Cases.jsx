@@ -10,6 +10,7 @@ const Cases = ({}, ref) => {
   const [index, setIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  console.log(index, index + 1);
 
   const pageWidth = document.documentElement.scrollWidth;
 
@@ -37,12 +38,16 @@ const Cases = ({}, ref) => {
       (pageWidth >= 768 && index < data.length - 2)
     ) {
       setIndex((index) => index + 1);
+    } else if (pageWidth < 768 && index === data.length - 1) {
+      setIndex((index) => data.length - 1 - index);
+    } else if (pageWidth >= 768 && index === data.length - 2) {
+      setIndex((index) => data.length - (index + 2));
     }
   }
 
   function clickLeft() {
     if (index === 0) {
-      return;
+      setIndex(data.length - 2);
     } else {
       setIndex((index) => index - 1);
     }
